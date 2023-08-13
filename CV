@@ -1,0 +1,116 @@
+% Simple asymmetric two-column CV 
+% Author: Angelith Rincón
+
+
+\documentclass[a4paper,10pt]{article}
+\usepackage[vmargin=1.5cm, hmargin=1.5cm]{geometry}
+\input{MySetup}
+
+
+\begin{document}
+\thispagestyle{empty}
+
+% Left column
+
+\begin{adjustbox}{valign=t}
+\begin{minipage}{0.3\textwidth} % Adapt width to your convenience
+%----------------------------------------------------
+% Please add a photo in 1x1 format
+\begin{center}
+\begin{tikzpicture}
+	\clip (0,0) circle (2cm) node {\includegraphics[width=4cm]{Foto.jpeg}};
+\end{tikzpicture}
+
+\MySkip 	
+
+{\LARGE \bfseries Angelith Alejandra Rincon Lopez}
+
+\MySkip 
+
+Fecha de nacimiento: 11/11/2005\\
+En la ciudad de: Bogota D.C\\
+Actualmente en: Bogota D.C\\
+
+\MySkip 	% See MySetup.tex file
+
+\textcolor{ColorTwo}{\faEnvelopeO} 
+\myhref{mailto:arinconl2@ucentra.edu.co.io}{arinconl2@ucentral.edu.co} \\
+\end{center}
+
+\vfill
+%-----------------------------------------
+\section*{Intereses importantes}
+\raggedright
+\textcolor{ColorOne}{$\circ$} Me gusta viajar en ratos libres.\\
+\textcolor{ColorOne}{$\circ$} Me gusta el skate.\\
+\textcolor{ColorOne}{$\circ$} Me gusta ver series.\\
+\textcolor{ColorOne}{$\circ$} Soy muy buena con lo que me propongo.
+
+\vfill
+
+%----------------------------------------------------
+\section*{Educacion}
+	\begin{description}
+	\raggedright
+	\item [\normalfont \textcolor{ColorOne}{2022-2023.}] \textbf{Actualmente estudio en la Universidad Central.}\\
+	En 4 semestre.\\
+	En la carrera de Ingenieriaa de Sistemas.
+
+	\item [\normalfont \textcolor{ColorOne}{2021.}] \textbf{Certificacion en Industrias Creativas}\\
+	En la Universidad Tecnologica De Pererira (UTP)\\
+	
+
+\end{description}
+
+\vfill
+\end{minipage}
+\end{adjustbox}
+%
+%
+%-------------------------------------------------------------------------------------------------------
+% Vertical rule
+%-------------------------------------------------------------------------------------------------------
+%
+\hfill
+\begin{adjustbox}{valign=t}
+\begin{minipage}{0.05\textwidth} % Adapt width to your convenience
+\MyVerticalRule  
+\end{minipage}
+\end{adjustbox}
+\hfill
+%
+%-------------------------------------------------------------------------------------------------------
+% Right column
+%-------------------------------------------------------------------------------------------------------
+\begin{adjustbox}{valign=t}
+\begin{minipage}{0.6\textwidth} % Adapt width to your convienience
+
+%----------------------------------------------------
+\section*{Experiencia laboral}
+\begin{description}
+\raggedright
+\item[\normalfont \textcolor{ColorOne}{2022-2023}] 
+	\textbf{Mi primer trabajo}\\ \medskip
+	
+	Mis papas decidieron darme trabajo en su casa de eventos y hasta el dia de hoy sigo trabajando con ellos como fotografa de la casa.
+	
+\item[\normalfont \textcolor{ColorOne}{2023.}] 
+	\textbf{Actualmente}\\ \medskip
+	
+	Hoy dia trabajo en una joyeria, por dias.
+\end{description}
+
+\begin{multicols}{2}
+
+\section*{Lenguajes}
+\begin{tabular}{ll}
+	Espanol 		& \SkillBull{$\bullet \bullet \bullet \, \circ$}\\
+	Ingles 		& \SkillBull{$\bullet \circ \circ \, \circ$}\\
+\end{tabular}
+\end{multicols}
+%----------------------------------------------------
+\LastUpdate
+%----------------------------------------------------
+\end{minipage}
+\end{adjustbox}
+\end{document}
